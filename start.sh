@@ -1,5 +1,4 @@
 #!/bin/sh
-cd fix_sublime_zh 
 sudo apt-get install build-essential
 sudo apt-get install libgtk2.0-dev
 gcc -shared -o libsublime-imfix.so sublime-imfix.c `pkg-config --libs --cflags gtk+-2.0` -fPIC
